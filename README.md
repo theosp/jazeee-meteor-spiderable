@@ -21,6 +21,11 @@ spiderable-longer-timeout
  - [Test with Google](#google-tools-fetch-as-google)
  - [Original Spiderable documentation](#from-meteors-original-spiderable-documentation-see-notes-specific-to-this-branch-above)
 
+### theosp fork changes
+
+* The server now looks for the ENABLE_SPIDERABLE environmental variable to
+  decide whether or not to enable the spiderable feature.
+
 ### About
 This is a fork of the standard meteor `spiderable` package, with some merged code from `ongoworks:spiderable` package. Primarily, this lengthens the timeout to 30 seconds and size limit to 10MB. All results will be cached to Mongo collection, by default for 3 hours (180 minutes).
 
